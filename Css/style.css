@@ -1,0 +1,245 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+/* Normalize */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Botones */
+button{
+    cursor: pointer;
+    
+    
+}
+
+/* Links */
+a{
+    text-decoration: none;
+    border: none;
+}
+
+/* Lista */
+ul,ol{
+    list-style: none;
+}
+
+/* Variables */
+:root{
+    --A:#060047;
+    --B:#B3005E;
+    --C:#E90064;
+    --D:#FF5F9E;
+
+    ---Gradients1: linear-gradient( 111.4deg,  rgba(238,113,113,1) 1%, rgba(246,215,148,1) 58% ) no-repeat fixed center ;
+    
+    /* Fonts */
+    ---titulo:"Teko" ;
+    ---texto:"Chakra Petch" ;
+}
+
+.display-none{
+    display: none;
+}
+
+/* Animaciones */
+
+
+/* Body */
+body{
+    
+    
+    
+
+    color: var(--C);
+    font-family: var(---texto);
+    text-shadow: 0 0 10px var(--D);
+
+    
+
+}
+
+/* Boton para cambiar modo */
+.light-mode{
+    background-color: bisque;
+    background: var(---Gradients1);
+    color: rgb(9, 9, 29);
+
+}
+
+.dark-mode{
+    background: url(https://cdn.pixabay.com/photo/2024/01/24/10/25/universe-8529312_1280.png)center fixed no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-color: black;
+    color: azure;
+}
+
+.light-mode, .dark-mode{
+    transition: 1s;
+} 
+
+
+.btn-header{
+    border: none;
+    background-color:transparent ;
+    color: black;
+    font-size: 1rem;
+    
+
+    width: 70px;
+}
+/* Filtro sobre la imagen */
+.main-container{
+    width: 100vh;
+    height: 100vh;
+    
+}
+
+.main-container, .Filter-darkness{
+    align-items: center;
+    
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgba(0, 0, 0, 0.61);
+    
+}
+
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+
+   
+    
+    padding: 18px;
+    font-style: oblique;
+
+    color: var(--A);
+    font-family: var(---titulo);
+    text-shadow: 0 0 10px #FF5F9E;
+    
+}
+
+
+
+/* Boton logout */
+.button-logout{
+    font-size: 1rem;
+    color: var(--A);
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: 1.3rem;
+    font-family: var(---titulo);
+    
+    background-color: var(--D);
+    
+    
+}
+
+.button-logout:hover{
+    transition: 0.5s;
+    
+    box-shadow: 0 0 9px #FF5F9E;
+    
+}
+
+/* Main */
+
+.main-container{
+    background:url(https://s0.smartresize.com/wallpaper/853/820/HD-wallpaper-anime-landscape-ai-city.jpg) center no-repeat fixed;
+    background-size:cover ; 
+    height: calc(100vh - 300px);
+    position: fixed;
+    z-index: -1;
+}
+
+/* tasklist */
+
+.tasklist-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+    padding: 50px 0;
+    
+    
+}
+.tasklist-container form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tasklist-input{
+    width: 80%;
+    max-width: 800px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-family: var(---titulo);
+    padding: 0 10px;
+    border: none;
+    margin-top: 8px;
+
+    
+}
+.tasklist{
+    width: 80%;
+    max-width: 800px;
+    padding: 25px 0;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px 0;
+    font-family: var(---texto);
+}
+
+.tasklist li::before{
+    content: '📝';
+}
+
+/* Botton para limpiar lista de tareas */
+.tasklist-clean{
+    border: solid 1.8px;
+    border-radius: 10px;
+    padding: 8px 0;
+    width: 40%;
+
+    font-family: var(---titulo);
+    font-size: 1.5rem;
+    background-color: var(--B);
+}
+
+.tasklist-clean:hover{
+    transition: 0.5s;
+    box-shadow: 0 0 9px var(--D);
+    
+}
+
+
+/* Footer */
+
+footer{
+    
+    display: flex;
+    justify-content: center;
+    
+
+    width: 100%;
+    height: 203px;
+    bottom: 0px;
+    position: absolute;
+}
